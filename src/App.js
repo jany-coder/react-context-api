@@ -9,12 +9,13 @@ import { createContext } from 'react';
 export const CategoryContext = createContext();
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [category, setCategory] = useState(0);
   return (
     <div className="App">
-      <CategoryContext.Provider value={count}>
-        <p>Count Value App: {count}</p>
-        <Header count={count} setCount={setCount} />
+    <h1 style={{fontWeight:"500"}}><u>Context API Example</u></h1>
+      <CategoryContext.Provider value={[category, setCategory]}>
+        <p>Count Value App: {category}</p>
+        <Header />
         <Home />
         <Shipment />
       </CategoryContext.Provider>

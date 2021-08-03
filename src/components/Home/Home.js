@@ -6,7 +6,7 @@ const Home = () => {
     const category = useContext(CategoryContext)
     return (
         <div>
-            <h2>Home : {category}</h2>
+            <h1>Home (Parent): {category}</h1>
             <Categories></Categories>
             <hr />
         </div>
