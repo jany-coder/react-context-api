@@ -6,8 +6,10 @@ const Header = () => {
     return (
         <div>
             <h2>Header : {category}</h2>
-            <button onClick={() => setCount(category + 1)}>Increment</button>
-            <button onClick={() => setCount(0)}>Reset</button>
+            <button onClick={() => setCount("Laptop")}>Laptop</button>
+            <button onClick={() => setCount("Mobile")}>Mobile</button>
+            <button onClick={() => setCount("Camera")}>Camera</button>
+            <button onClick={() => setCount("")}>Reset</button>
             <hr />
         </div>
     );

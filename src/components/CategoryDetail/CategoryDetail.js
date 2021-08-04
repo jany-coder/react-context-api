@@ -1,11 +1,17 @@
 import React, { useContext } from 'react';
 import { CategoryContext } from '../../App';
 
-const CategoryDetail = () => {
+const CategoryDetail = (props) => {
   const category = useContext(CategoryContext)
+
+  const {name} = props.product;
+
+
     return (
         <div>
-            <h3>CategoryDetail (grand-child) : {category}</h3>
+            <h3>This is your category detail</h3>
+            <h3>Selected Product : {category}</h3>
+            <p>{name}</p>
         </div>
     );
 };

@@ -9,7 +9,7 @@ import { createContext } from 'react';
 export const CategoryContext = createContext();
 
 function App() {
-  const [category, setCategory] = useState(0);
+  const [category, setCategory] = useState('laptop');
   return (
     <div className="App">
     <h1 style={{fontWeight:"500"}}><u>Context API Example</u></h1>
@@ -19,7 +19,6 @@ function App() {
         <Home />
         <Shipment />
       </CategoryContext.Provider>
-
     </div>
   );
 }
